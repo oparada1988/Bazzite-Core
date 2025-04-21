@@ -2,15 +2,26 @@
 
 set -ouex pipefail
 
-### Install packages
+# remove unwanted packages
+dnf5 remove gnome-shell-extension-hanabi
+dnf5 remove gnome-shell-extension-caffeine
+dnf5 remove gnome-shell-extension-compiz-windows-effect
+dnf5 remove gnome-shell-extension-blur-my-shell
+dnf5 remove sunshine
+dnf5 remove waydroid
+dnf5 remove input-remapper
+dnf5 remove rom-properties
+dnf5 remove discover-overlay
+dnf5 remove btrfs-assistant
+dnf5 remove firewalld
 
-# Packages can be installed from any enabled yum repo on the image.
-# RPMfusion repos are available by default in ublue main images
-# List of rpmfusion packages can be found here:
-# https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
+# remove unwanted flatpaks
+flatpak uninstall io.github.flattool.Warehouse
+flatpak uninstall io.github.dvlv.boxbuddyrs
+flatpak uninstall com.vysp3r.ProtonPlus
+flatpak uninstall com.github.Matoking.protontricks
 
-# this installs a package from fedora repos
-dnf5 install -y tmux 
+
 
 # Use a COPR Example:
 #
