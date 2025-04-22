@@ -22,7 +22,9 @@ flatpak uninstall io.github.dvlv.boxbuddyrs
 flatpak uninstall com.vysp3r.ProtonPlus
 flatpak uninstall com.github.Matoking.protontricks
 
-
+# install flatpak packages
+flatpak install com.google.Chrome
+flatpak install com.discordapp.Discord
 
 # Use a COPR Example:
 #
