@@ -17,22 +17,15 @@ dnf5 remove btrfs-assistant
 dnf5 remove firewalld
 
 # remove unwanted flatpaks
-flatpak uninstall io.github.flattool.Warehouse
-flatpak uninstall io.github.dvlv.boxbuddyrs
-flatpak uninstall com.vysp3r.ProtonPlus
-flatpak uninstall com.github.Matoking.protontricks
+flatpak --assumeyes uninstall io.github.flattool.Warehouse \
+      io.github.dvlv.boxbuddyrs  \
+      com.vysp3r.ProtonPlus \
+      com.github.Matoking.protontricks \
+
 
 # install flatpak packages
-flatpak install com.google.Chrome
-flatpak install com.discordapp.Discord
+flatpak --assumeyes install com.google.Chrome \
+      com.discordapp.Discord \
 
-# Use a COPR Example:
-#
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
-# Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
-
-#### Example for enabling a System Unit File
 
 
