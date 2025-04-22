@@ -35,4 +35,4 @@ flatpak install com.discordapp.Discord
 
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket
+
