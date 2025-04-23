@@ -2,13 +2,9 @@
 
 set -ouex pipefail
 
-#!/bin/bash
-
-set -ouex pipefail
-
 # Function to configure a custom wallpaper
 configure_wallpaper() {
-    local wallpaper_path=$1
+    local wallpaper_path=/Wallpaper 1.png
     if [[ -f "$wallpaper_path" ]]; then
         echo "Setting custom wallpaper from $wallpaper_path"
         mkdir -p /usr/share/backgrounds/custom/
