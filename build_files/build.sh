@@ -15,6 +15,8 @@ dnf5 remove gnome-shell-extension-hanabi \
       discover-overlay \
       btrfs-assistant \
       firewalld \
+# install packages
+dnf5 install gnome-shell-extension-dash-to-dock
 
 # remove unwanted flatpaks
 flatpak --assumeyes uninstall io.github.flattool.Warehouse \
