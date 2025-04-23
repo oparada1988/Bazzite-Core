@@ -30,6 +30,7 @@ dnf5 remove gnome-shell-extension-hanabi \
       discover-overlay \
       btrfs-assistant \
       firewalld \
+      
 # install packages
 dnf5 install gnome-shell-extension-dash-to-dock
 
@@ -38,7 +39,6 @@ flatpak --assumeyes uninstall io.github.flattool.Warehouse \
       io.github.dvlv.boxbuddyrs  \
       com.vysp3r.ProtonPlus \
       com.github.Matoking.protontricks \
-
 
 # install flatpak packages
 flatpak --assumeyes install com.google.Chrome \
