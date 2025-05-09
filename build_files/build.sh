@@ -18,18 +18,13 @@ configure_wallpaper() {
 }
 
 # remove unwanted packages
-dnf5 remove gnome-shell-extension-hanabi \
-      gnome-shell-extension-caffeine \
-      gnome-shell-extension-compiz-windows-effect \
-      gnome-shell-extension-blur-my-shell \
-      gnome-shell-extension-gsconnect \
-      sunshine \
+dnf5 remove sunshine \
       waydroid \
       input-remapper \
       rom-properties \
       discover-overlay \
       btrfs-assistant \
-      firewalld \
+      firewalld -y
       
 # install packages
 dnf5 install gnome-shell-extension-dash-to-dock
