@@ -28,13 +28,3 @@ dnf5 -y remove sunshine \
       
 # install packages
 dnf5 -y install gnome-shell-extension-dash-to-dock
-
-# remove unwanted flatpaks
-flatpak --assumeyes uninstall io.github.flattool.Warehouse \
-      io.github.dvlv.boxbuddyrs  \
-      com.vysp3r.ProtonPlus \
-      com.github.Matoking.protontricks \
-
-# install flatpak packages
-flatpak --assumeyes install com.google.Chrome \
-      com.discordapp.Discord \
