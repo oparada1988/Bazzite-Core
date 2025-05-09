@@ -18,16 +18,16 @@ configure_wallpaper() {
 }
 
 # remove unwanted packages
-dnf5 remove sunshine \
+dnf5 -y remove sunshine \
       waydroid \
       input-remapper \
       rom-properties \
       discover-overlay \
       btrfs-assistant \
-      firewalld -y
+      firewalld
       
 # install packages
-dnf5 install gnome-shell-extension-dash-to-dock
+dnf5 -y install gnome-shell-extension-dash-to-dock
 
 # remove unwanted flatpaks
 flatpak --assumeyes uninstall io.github.flattool.Warehouse \
